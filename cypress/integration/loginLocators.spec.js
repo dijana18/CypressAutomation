@@ -15,7 +15,7 @@ describe('Login with locators', () => {
 
 
     it ('logout', () => {
-       cy.get(Locators.Logout.logoutBtn).click();
+       cy.get(Locators.Logout.logoutBtn).eq(2).click();
     })  
     
 })

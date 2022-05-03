@@ -166,5 +166,13 @@
     "yallist": "^4.0.0",
     "yauzl": "^2.10.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dijana18/CypressAutomation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dijana18/CypressAutomation/issues"
+  },
+  "homepage": "https://github.com/dijana18/CypressAutomation#readme",
   "description": ""
 }
