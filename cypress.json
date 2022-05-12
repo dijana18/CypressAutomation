@@ -1,4 +1,7 @@
 {
-    "baseUrl":"https://gallery-app.vivifyideas.com"
-
+    "baseUrl":"https://gallery-app.vivifyideas.com",
+    "env": {
+        "EXTERNAL_EMAIL":"dijana@gmail.com",
+        "EXTERNAL_PASSWORD":"12345678"
+    }
 }

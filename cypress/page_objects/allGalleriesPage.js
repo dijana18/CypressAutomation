@@ -1,14 +1,26 @@
 class AllGalleriesPage {
+    get allGalleriesHeading() {
+        return cy.get('h1');
+    }
+
     get searchInput() {
-        return cy.get('input[type="text"]');
+        return cy.get('input');
     }
 
     get filterBtn() {
-        return cy.get('button[type="button"]')
+        return cy.get('.btn').first();
     }
 
-    filterBy(word) {
-        this.searchInput.type(word);
+    get loadMoreBtn() {
+        return cy.get('.btn').last();
+    }
+
+    get singleGallery() {
+        return cy.get('.cell');
+    }
+
+    search(searchTerm) {
+        this.searchInput.type(searchTerm);
         this.filterBtn.click();
     }
 }

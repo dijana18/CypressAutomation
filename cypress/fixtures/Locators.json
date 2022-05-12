@@ -2,22 +2,18 @@
   "Login": {
     "emailInput": "#email",
     "passwordInput": "#password",
-    "submitBtn": "button[type='submit']"
+    "submitBtn": "button[class='btn btn-custom']"
   },
-
   "Logout": {
-      "logoutBtn": "a[class='nav-link nav-buttons']"
+    "logoutBtn": "a[class='nav-link nav-buttons']"
   },
-
-  "Registration" : {
-    "firstNameInput":"#first-name",
-    "lastNameInput":"#last-name",
-    "emailInput":"#email",
-    "passwordInput":"#password",
-    "confirmedPasswordInput":"#password-confirmation",
-    "tacCheckbox":":checkbox",
-    "submitBtn":"button"
-
+  "Registration": {
+    "firstNameInput": "#first-name",
+    "lastNameInput": "#last-name",
+    "emailInput": "#email",
+    "passwordInput": "#password",
+    "confirmedPasswordInput": "#password-confirmation",
+    "tacCheckbox": ":checkbox",
+    "submitBtn": "button"
   }
-
 }

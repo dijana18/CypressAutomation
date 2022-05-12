@@ -25,17 +25,33 @@ class RegisterPage {
     }
 
     get submitBtn() {
-        return cy.get('button[type="submit"]')
+        return cy.get('button[class="btn btn-custom"]')
     }
 
-    register(firstName, lastName, email, password){
+    get heading() {
+        return cy.get('h1');
+    }
+
+    get errorMsg() {
+        return cy.get('p[class="alert alert-danger"]');
+    }
+
+    register(firstName, lastName, email, password, passwordConfirmed) {
         this.firstNameInput.type(firstName)
         this.lastNameInput.type(lastName)
         this.emailInput.type(email)
         this.passwordInput.type(password)
-        this.passwordConfirmationInput.type(password)
+        this.passwordConfirmationInput.type(passwordConfirmed)
         this.checkBox.check()
         this.submitBtn.click()
+    }
+
+    fillRegisterForm(firstName, lastName, email, password, passwordConfirmed) {
+        this.firstNameInput.type(firstName)
+        this.lastNameInput.type(lastName)
+        this.emailInput.type(email)
+        this.passwordInput.type(password)
+        this.passwordConfirmationInput.type(passwordConfirmed)
     }
 }
 

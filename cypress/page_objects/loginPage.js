@@ -8,16 +8,22 @@ class LoginPage {
     }
 
     get submitBtn() {
-        return cy.get('button[type="submit"]')
+        return cy.get('button[class="btn btn-custom"]')
     }
 
-    login(email,pass) {
+    get loginHeading() {
+        return cy.get('h1');
+    }
+
+    get errorMsg() {
+        return cy.get('p[class="alert alert-danger"]');
+    }
+
+    login(email, pass) {
         this.emailInput.type(email)
         this.passwordInput.type(pass)
         this.submitBtn.click();
     }
-
-
 }
 
 export const loginPage = new LoginPage();
